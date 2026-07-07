@@ -2,9 +2,9 @@
 
 A modern, responsive personal portfolio website showcasing my journey as a Software Engineering student — my skills, projects, work experience, and certifications.
 
-🔗 **Live Demo:** [Add your deployed link here]
+🔗 **Live Demo:** [https://nasir-iqbal.netlify.app](https://nasir-iqbal.netlify.app)
 
-![Portfolio Preview](preview.png)
+![Portfolio Preview](/src/assets/images/preview.png)
 <!-- Add a screenshot of your site named preview.png in the repo root, or remove this line -->
 
 ---
@@ -66,7 +66,7 @@ Just a web browser — no dependencies needed.
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/nasirbhatti14/portfolio-website.git
+   git clone https://github.com/nasirbhatti14/My_Portfolio.git
    ```
 2. Navigate to the project folder
    ```bash
