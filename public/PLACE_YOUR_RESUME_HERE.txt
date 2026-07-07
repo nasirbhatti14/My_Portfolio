@@ -1,0 +1,8 @@
+Hey Nasir!
+
+To make the "Download Resume" button download your actual PDF resume instead of the generated text resume:
+
+1. Name your PDF resume exactly: resume.pdf
+2. Upload it directly into this 'public' folder (so its path is /public/resume.pdf).
+
+Our smart portfolio code is already configured to automatically detect and download this PDF when someone clicks "Download Resume"! If it doesn't exist, it gracefully falls back to downloading a clean, beautifully formatted text-based resume (.txt) populated with your live portfolio data.
