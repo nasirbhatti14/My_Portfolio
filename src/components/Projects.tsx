@@ -110,6 +110,17 @@ export default function Projects({ onOpenTerminal }: ProjectsProps) {
                           Run CLI Demo
                         </button>
                       )}
+                      {project.demoUrl && (
+                        <a
+                          href={project.demoUrl}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="flex-1 text-xs font-sans flex items-center justify-center gap-1.5 bg-violet-600 hover:bg-violet-500 text-white font-semibold px-4 py-2.5 rounded-xl shadow-lg shadow-violet-900/20 hover:shadow-violet-900/30 transition-all cursor-pointer"
+                        >
+                          <ExternalLink className="w-3.5 h-3.5" />
+                          Live Demo
+                        </a>
+                      )}
                       {project.githubUrl && (
                         <a
                           href={project.githubUrl}

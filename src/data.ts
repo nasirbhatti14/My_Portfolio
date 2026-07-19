@@ -26,6 +26,7 @@ export const skillCategories: SkillCategory[] = [
     title: "Frameworks & Technologies",
     icon: "Cpu",
     skills: [
+      { name: "Streamlit", level: 70},
       { name: "Django", level: 50 },
       { name: "NumPy", level: 70 }
     ]
@@ -95,10 +96,11 @@ export const projects: ProjectItem[] = [
   {
     id: "library-management",
     title: "Library Management System",
-    description: "A comprehensive digital cataloging and database system to manage book collections, student memberships, and loan trackings. Developed using Python with MySQL as the relational storage engine.",
-    tags: ["Python", "MySQL", "SQL", "Database Systems"],
+    description:  "A web-based Library Management System built with Streamlit and MySQL, allowing librarians to manage members, books, and issued/returned records through a simple, interactive dashboard.",
+    tags: ["Python", "MySQL", "Streamlit", "SQL", "Database Systems"],
     status: "active",
-    githubUrl: "https://github.com/nasirbhatti14/Library_Management_System"
+    githubUrl: "https://github.com/nasirbhatti14/Library_Management_System",
+    demoUrl: "https://librarymanages.streamlit.app/"
   },
   {
     id: "coming-soon-1",
