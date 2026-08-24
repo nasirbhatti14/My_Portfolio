@@ -111,6 +111,7 @@ The Islamia University of Bahawalpur (IUB), Pakistan
 
 ## 📜 Certifications
 
+- **Python** — Kaggle
 - **Django REST APIs** — SimpliLearn SkillUp
 
 ---
