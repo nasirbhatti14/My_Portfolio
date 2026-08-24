@@ -37,6 +37,7 @@ export interface CertificationItem {
   date: string;
   description: string;
   credentialUrl?: string;
+  skills?: string[];
 }
 
 export interface ExpenseItem {

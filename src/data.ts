@@ -26,8 +26,8 @@ export const skillCategories: SkillCategory[] = [
     title: "Frameworks & Technologies",
     icon: "Cpu",
     skills: [
-      { name: "Streamlit", level: 70},
       { name: "Django", level: 50 },
+      { name: "Streamlit", level: 75 },
       { name: "NumPy", level: 70 }
     ]
   },
@@ -96,8 +96,8 @@ export const projects: ProjectItem[] = [
   {
     id: "library-management",
     title: "Library Management System",
-    description:  "A web-based Library Management System built with Streamlit and MySQL, allowing librarians to manage members, books, and issued/returned records through a simple, interactive dashboard.",
-    tags: ["Python", "MySQL", "Streamlit", "SQL", "Database Systems"],
+    description: "A web-based Library Management System built with Streamlit and MySQL, allowing librarians to manage members, books, and issued/returned records through a simple, interactive dashboard.",
+    tags: ["Streamlit", "MySQL", "Python", "Database Systems"],
     status: "active",
     githubUrl: "https://github.com/nasirbhatti14/Library_Management_System",
     demoUrl: "https://librarymanages.streamlit.app/"
@@ -113,12 +113,32 @@ export const projects: ProjectItem[] = [
 
 export const certifications: CertificationItem[] = [
   {
+    id: "cert-python",
+    title: "Python Certificate",
+    issuer: "Kaggle",
+    date: "2026",
+    description: "Certified in Python programming by Kaggle, covering core syntax, data structures, functions, logic conditions, loops, and working with external libraries.",
+    credentialUrl: "https://www.kaggle.com/learn/certification/nasir1411/python",
+    skills: [
+      "Syntax, Variables & Types",
+      "Functions & Logic Control",
+      "Lists, Dictionaries & Loops",
+      "Python External Libraries"
+    ]
+  },
+  {
     id: "cert-1",
     title: "Django REST APIs Certificate",
     issuer: "SimpliLearn SkillUp",
     date: "May 2026",
     description: "Certified in Django REST APIs with hands-on experience in building structured web APIs, configuring routes, serializers, views, and performing database migrations with Python and Django.",
-    credentialUrl: "https://www.simplilearn.com/skillup-certificate-landing?token=eyJjb3Vyc2VfaWQiOiIzMTMwIiwiY2VydGlmaWNhdGVfdXJsIjoiaHR0cHM6XC9cL2NlcnRpZmljYXRlcy5zaW1wbGljZG4ubmV0XC9zaGFyZVwvMTAxNzYyNzhfMTA0MjM1NDVfMTc3NzY0MjMwNDE5Mi5wbmciLCJ1c2VybmFtZSI6Ik5BU0lSIElRQkFMIn0%3D&utm_source=shared-certificate&utm_medium=lms&utm_campaign=shared-certificate-promotion&referrer=https%3A%2F%2Flms.simplilearn.com%2Fcourses%2F5897%2FPython%2520Django%2520101%2Fcertificate%2Fdownload-skillup&%24web_only=true&_branch_match_id=1595707044996461589&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXL87MLcjJ1EssKNDLyczL1k%2FVr3ROM3T3L3ULNEqyrytKTUstKsrMS49PKsovL04tsnXOKMrPTQUApNyCQD8AAAA%3D"
+    credentialUrl: "https://www.simplilearn.com/skillup-certificate-landing?token=eyJjb3Vyc2VfaWQiOiIzMTMwIiwiY2VydGlmaWNhdGVfdXJsIjoiaHR0cHM6XC9cL2NlcnRpZmljYXRlcy5zaW1wbGljZG4ubmV0XC9zaGFyZVwvMTAxNzYyNzhfMTA0MjM1NDVfMTc3NzY0MjMwNDE5Mi5wbmciLCJ1c2VybmFtZSI6Ik5BU0lSIElRQkFMIn0%3D&utm_source=shared-certificate&utm_medium=lms&utm_campaign=shared-certificate-promotion&referrer=https%3A%2F%2Flms.simplilearn.com%2Fcourses%2F5897%2FPython%2520Django%2520101%2Fcertificate%2Fdownload-skillup&%24web_only=true&_branch_match_id=1595707044996461589&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXL87MLcjJ1EssKNDLyczL1k%2FVr3ROM3T3L3ULNEqyrytKTUstKsrMS49PKsovL04tsnXOKMrPTQUApNyCQD8AAAA%3D",
+    skills: [
+      "REST Architecture & Views",
+      "Serializers & Validation",
+      "Authentication Models",
+      "Query Routing & Relational Mapping"
+    ]
   }
 ];
 
@@ -155,7 +175,7 @@ Key Coursework:
 TECHNICAL SKILLS
 ----------------------------------------------------------------
 - Languages: Python, SQL
-- Frameworks/Tech: Django, NumPy
+- Frameworks/Tech: Django, Streamlit, NumPy
 - Tools/Platforms: Git, GitHub, VS Code, MySQL
 
 ----------------------------------------------------------------
@@ -174,7 +194,9 @@ WORK EXPERIENCE
 ----------------------------------------------------------------
 PROJECTS & CERTIFICATIONS
 ----------------------------------------------------------------
+- Library Management System: Web app with Streamlit & MySQL.
 - Student Expense Tracker: CLI app in Python storing expenditures in JSON.
+- Python Certificate: Issued by Kaggle (2026).
 - Django REST APIs Certificate: Issued by SimpliLearn SkillUp (May 2026).
 
 ================================================================
