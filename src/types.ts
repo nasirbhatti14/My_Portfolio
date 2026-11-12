@@ -23,6 +23,7 @@ export interface ProjectItem {
   id: string;
   title: string;
   description: string;
+  role?: string;
   tags: string[];
   status: 'active' | 'coming-soon';
   githubUrl?: string;

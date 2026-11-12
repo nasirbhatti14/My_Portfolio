@@ -10,7 +10,7 @@ export const personalInfo = {
   linkedin: "https://linkedin.com/in/nasir-iqbal-se",
   github: "https://github.com/nasirbhatti14",
   avatarUrl: "/src/assets/images/nasir_avatar_1783373283273.jpg",
-  bio: "Software Engineering student with a strong interest in programming, databases, and software development. Familiar with Python, SQL, and object-oriented programming concepts. Quick learner with good problem-solving skills, eager to gain practical experience and contribute to a professional team environment."
+  bio: "Software Engineering student with a strong interest in programming, databases, and software development. Familiar with Python, C++, SQL, and object-oriented programming concepts. Quick learner with good problem-solving skills, eager to gain practical experience and contribute to a professional team environment."
 };
 
 export const skillCategories: SkillCategory[] = [
@@ -19,6 +19,7 @@ export const skillCategories: SkillCategory[] = [
     icon: "Code2",
     skills: [
       { name: "Python", level: 85 },
+      { name: "C++", level: 80 },
       { name: "SQL", level: 80 }
     ]
   },
@@ -26,7 +27,7 @@ export const skillCategories: SkillCategory[] = [
     title: "Frameworks & Technologies",
     icon: "Cpu",
     skills: [
-      { name: "Django", level: 50 },
+      { name: "Pandas", level: 75 },
       { name: "Streamlit", level: 75 },
       { name: "NumPy", level: 70 }
     ]
@@ -90,7 +91,6 @@ export const projects: ProjectItem[] = [
     description: "A simple command-line expense tracking application built with Python. Helps users record daily expenses, view expense history, calculate total spending, categorise receipts, and persist data locally using structured JSON storage.",
     tags: ["Python", "JSON", "CLI", "File I/O"],
     status: "active",
-    hasTerminalSimulator: true,
     githubUrl: "https://github.com/nasirbhatti14/Student_Expense_Tracker"
   },
   {
@@ -103,11 +103,13 @@ export const projects: ProjectItem[] = [
     demoUrl: "https://librarymanages.streamlit.app/"
   },
   {
-    id: "coming-soon-1",
-    title: "Django REST APIs Project",
-    description: "An advanced student portal web API featuring custom authentication, course registration workflows, and secure database indexing with MySQL. Under development to practice scalable Django Rest Framework patterns.",
-    tags: ["Django", "DRF", "MySQL", "REST API"],
-    status: "coming-soon"
+    id: "protein-farm",
+    title: "Noor Muhammad Protein Farm",
+    description: "A management website for a layer poultry farm. It includes an admin panel to manage stock and sales, and a login-protected public page where customers can view the current stock.",
+    role: "Designed and built the full website for a real client, using AI-assisted development (Google AI Studio).",
+    tags: ["AI Studio", "Web App", "Admin Panel", "Authentication", "Netlify"],
+    status: "active",
+    demoUrl: "https://noor-muhammad-protein-farm.netlify.app/"
   }
 ];
 
@@ -174,8 +176,8 @@ Key Coursework:
 ----------------------------------------------------------------
 TECHNICAL SKILLS
 ----------------------------------------------------------------
-- Languages: Python, SQL
-- Frameworks/Tech: Django, Streamlit, NumPy
+- Languages: Python, C++, SQL
+- Frameworks/Tech: Pandas, Streamlit, NumPy
 - Tools/Platforms: Git, GitHub, VS Code, MySQL
 
 ----------------------------------------------------------------
@@ -194,6 +196,7 @@ WORK EXPERIENCE
 ----------------------------------------------------------------
 PROJECTS & CERTIFICATIONS
 ----------------------------------------------------------------
+- Noor Muhammad Protein Farm: Poultry farm management web app (Admin panel & public stock view).
 - Library Management System: Web app with Streamlit & MySQL.
 - Student Expense Tracker: CLI app in Python storing expenditures in JSON.
 - Python Certificate: Issued by Kaggle (2026).

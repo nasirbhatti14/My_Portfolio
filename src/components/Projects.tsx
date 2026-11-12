@@ -1,9 +1,9 @@
 import React from 'react';
-import { FolderGit2, Terminal, Code2, ExternalLink, ArrowUpRight, Hourglass } from 'lucide-react';
+import { FolderGit2, Terminal, Code2, ExternalLink, ArrowUpRight, Hourglass, Globe, Layers } from 'lucide-react';
 import { projects } from '../data';
 
 interface ProjectsProps {
-  onOpenTerminal: () => void;
+  onOpenTerminal?: () => void;
 }
 
 export default function Projects({ onOpenTerminal }: ProjectsProps) {
@@ -54,7 +54,15 @@ export default function Projects({ onOpenTerminal }: ProjectsProps) {
                         ? 'bg-violet-600/10 border-violet-500/25 text-violet-400' 
                         : 'bg-zinc-900/60 border-zinc-800/80 text-zinc-500'
                     }`}>
-                      {isActive ? <Terminal className="w-5 h-5" /> : <Hourglass className="w-5 h-5" />}
+                      {!isActive ? (
+                        <Hourglass className="w-5 h-5" />
+                      ) : project.id === 'expense-tracker' || project.hasTerminalSimulator ? (
+                        <Terminal className="w-5 h-5" />
+                      ) : project.id === 'protein-farm' ? (
+                        <Globe className="w-5 h-5" />
+                      ) : (
+                        <Layers className="w-5 h-5" />
+                      )}
                     </div>
 
                     {/* Status Badge */}
@@ -75,9 +83,17 @@ export default function Projects({ onOpenTerminal }: ProjectsProps) {
                   </h3>
 
                   {/* Description */}
-                  <p className="text-zinc-400 text-sm leading-relaxed mb-6 font-light">
+                  <p className="text-zinc-400 text-sm leading-relaxed mb-4 font-light">
                     {project.description}
                   </p>
+
+                  {/* Role if available */}
+                  {project.role && (
+                    <div className="mb-5 p-3 rounded-xl bg-violet-950/25 border border-violet-900/30 text-xs text-zinc-300 leading-relaxed font-light">
+                      <span className="font-semibold text-violet-300 block mb-1">My Role:</span>
+                      {project.role}
+                    </div>
+                  )}
                 </div>
 
                 {/* Footer section inside card */}
@@ -126,9 +142,13 @@ export default function Projects({ onOpenTerminal }: ProjectsProps) {
                           href={project.githubUrl}
                           target="_blank"
                           rel="noreferrer"
-                          className="text-xs font-sans flex items-center justify-center gap-1 bg-zinc-900 hover:bg-zinc-800 text-zinc-300 border border-zinc-800 hover:border-zinc-700 px-3.5 py-2.5 rounded-xl transition-colors"
+                          className={`${
+                            !project.demoUrl ? 'flex-1' : ''
+                          } text-xs font-sans flex items-center justify-center gap-1.5 bg-zinc-900 hover:bg-zinc-800 text-zinc-300 hover:text-white border border-zinc-800 hover:border-zinc-700 px-4 py-2.5 rounded-xl transition-colors font-medium`}
                         >
-                          Code <ArrowUpRight className="w-3.5 h-3.5 text-zinc-500" />
+                          <FolderGit2 className="w-3.5 h-3.5 text-violet-400" />
+                          <span>Code</span>
+                          <ArrowUpRight className="w-3.5 h-3.5 text-zinc-500" />
                         </a>
                       )}
                     </div>
@@ -145,25 +165,6 @@ export default function Projects({ onOpenTerminal }: ProjectsProps) {
             );
           })}
 
-        </div>
-
-        {/* Big terminal Call-To-Action banner */}
-        <div className="mt-16 p-6 md:p-8 rounded-2xl bg-gradient-to-r from-violet-950/20 via-zinc-950/80 to-zinc-950 border border-violet-500/10 flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="space-y-1.5 text-center md:text-left">
-            <h4 className="font-display font-bold text-lg text-zinc-200">
-              Want to see his code work live?
-            </h4>
-            <p className="text-xs md:text-sm text-zinc-400 font-light">
-              We simulated Nasir's original Command Line expense tracker inside our virtual terminal. Log some items, compute spending, and verify the I/O logic.
-            </p>
-          </div>
-          <button
-            onClick={onOpenTerminal}
-            className="whitespace-nowrap flex items-center gap-2 text-xs font-sans bg-zinc-900 hover:bg-zinc-800 text-violet-300 hover:text-white px-5 py-3 border border-violet-500/25 hover:border-violet-500/50 rounded-xl font-bold transition-all cursor-pointer"
-          >
-            <Terminal className="w-4 h-4" />
-            Launch Terminal Sandbox
-          </button>
         </div>
 
       </div>
