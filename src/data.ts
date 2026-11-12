@@ -3,7 +3,7 @@ import { SkillCategory, TimelineItem, ProjectItem, CertificationItem } from './t
 export const personalInfo = {
   name: "Nasir Iqbal",
   headline: "Software Engineering Student | Python Developer",
-  tagline: "Python developer | MySQL | Exploring AI & Machine Learning | Backend & Data Automation Enthusiast.",
+  tagline: "Python developer | C++ | MySQL | Exploring AI & Machine Learning | Backend & Data Automation Enthusiast.",
   location: "Bahawalpur, Pakistan",
   email: "nasir.bhatti.dev@gmail.com",
   phone: "+92 317 1825630",
